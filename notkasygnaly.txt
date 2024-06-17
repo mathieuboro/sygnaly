@@ -1,0 +1,66 @@
+TRANSFORMATA Z
+
+1) x = k*u(n)
+P1   alfa = k,   beta = k, gamma = 1,  delta = -1
+
+P2 alfa = k^2,   beta = k, gamma = 1, delta = -k
+
+P3 A = k, B = -1, C=1
+
+2) X = K^n u(n)
+
+P1 A = 1   B=1            D = -K jak mamy we wzorze Bz+D
+                          D = K jak mamy we wzorze Bz-D
+
+P2:
+
+Y = (an^2 + bn) c^n u(n)
+
+alfa = c(a+b)
+Beta = c^2(a-b)
+gama = 1
+delta = -c
+
+
+3) InverseZTransform[funkcja, z, n]
+https://www.wolframalpha.com/input?i=InverseZTransform%5B%28-1.6*z%5E2+-+17.6*z%29%2F%282*z-1%29%5E3%2C+z%2C+n%5D
+
+
+
+k-ty wspolczynnik sz. fouriera funkcji
+https://www.wolframalpha.com/input/?i=integrate+(3x%5E2+%2B+37x)*exp(-3*i*2*pi*x%2F(2*pi))%2F(2*pi)+from+-pi+to+pi
+
+1/2pi calka od -pi do pi f(x)exp(-ikx)
+
+
+
+wsp. fouriera z f. char.   k-ty wsp
+1/(pi) (integral(5*e^(-2*7*it)) from 0 to pi/2 - integral(5e^(-2*7*it)) from pi/2 to pi)
+
+
+1.Mamy polecenie o treœci "coœ tam coœ tam exp{-nt}...."
+alfa, beta = n^2
+A,B = 1
+C = n
+D = 0
+
+
+
+
+x(t) = asin(bt)     h(t) = exp(-kt)
+
+A = a/sqrt(b^+k^2)
+przesuniecie = -arctg(b/k)
+
+
+biegun powoduje zmniejszenie
+zera zwiêkszenie
+
+
+transformata ma postac - wsp orginalu
+robimy ulamek
+(as+b) / ( (s+c)^2 + d)
+mamy a exp(-ct) cos(sqrt(d) t) + (b-ac / sqrt(d)) exp(-at)sin(sqrt(d) t)
+
+
+FourierCoefficient[HeavisidePi(t/2pi) * cos(t/3), t, nasza liczba]
